@@ -1,0 +1,17 @@
+{
+  "name": "work",
+  "private": true,
+  "version": "1.0.0",
+  "author": "SAP SE",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "proxy": "node proxy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cors-anywhere": "^x.y.z"
+  },
+  "keywords": [],
+  "license": "ISC"
+}

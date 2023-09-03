@@ -1,0 +1,30 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+  <Dialog
+    id="helloDialog"
+    title="Dialog Box">
+    <content>
+      <FormattedText htmlText="Content {/recipient/name}"
+        class="sapUiSmallMargin"></FormattedText>
+      <Image src="https://cdn.pixabay.com/photo/2023/08/26/15/21/mushroom-8215265_1280.jpg"
+        class="myCustomImage" />
+      <html:style>
+        .myCustomImage {
+        width: 20rem;
+        height: 10rem;
+        display: block;
+        object-fit: cover;
+        }
+      </html:style>
+      <core:Icon src="sap-icon://hello-world"
+        size="16rem"
+        class="sapUiMediumMargin"/>
+    </content>
+    <beginButton>
+      <Button text="{i18n>dialogCloseButtonText}"
+        press=".onCloseDialog" />
+    </beginButton>
+  </Dialog>
+</core:FragmentDefinition>
